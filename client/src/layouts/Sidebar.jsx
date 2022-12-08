@@ -19,19 +19,28 @@ function Sidebar() {
           />
         </div>
         <div className="mt-12 space-y-8 menu justify-between">
-          <div className="icon-color">
-            <HomeIcon className="" />
+          <div>
+            <HomeIcon className="icon-color" />
           </div>
-          <div className="icon-color">
-            <ChartBarIcon className="" />
+          <div>
+            <ChartBarIcon className="icon-color" />
           </div>
-          <div className="icon-color">
-            <Cog6ToothIcon className="" />
+          <div>
+            <Cog6ToothIcon className="icon-color" />
           </div>
         </div>
       </div>
-      <div className="p-1 mb-3 icon-color">
-        <FlagIcon className="" />
+      <div>
+        <div>
+          <FlagIcon className="p-1 mb-3 icon-color" />
+        </div>
+        <div>
+          <img
+            className="h-8 w-8 rounded-full"
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
