@@ -1,0 +1,16 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 100%;
+    padding: 15px;
+}
+
+.sidebar .menu {
+    padding: 5px
+}
+
+.icon-color {
+    color: rgb(68, 76, 86);
+}
