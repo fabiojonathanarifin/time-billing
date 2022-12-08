@@ -1,0 +1,1 @@
+radix-ui/react-dialog cause tailwind form border a problem - but necessary for dashboard 
