@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Login />} />
       </Routes>
       <Registration />
-      {/* <Dashboard /> */}
+      <Dashboard />
       {/* <div className="contentmargin border-2 border-black md:container sm:mx-auto">
         <h1>Doom</h1>
       </div> */}
