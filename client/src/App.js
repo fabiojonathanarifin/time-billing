@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import DashProfile from "./pages/DashProfile";
 import DashProject from "./DashProject";
+import DashProgressBar from "./DashProgressBar";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Dashboard />
       <DashProfile />
       <DashProject />
+      <DashProgressBar />
     </div>
   );
 }
