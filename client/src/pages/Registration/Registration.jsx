@@ -3,7 +3,7 @@ import React from "react";
 function Registration() {
   return (
     <div>
-      <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
+      <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-100">
         <div>
           <a href="/">
             <img
