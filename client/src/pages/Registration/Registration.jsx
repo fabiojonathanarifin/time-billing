@@ -7,8 +7,8 @@ function Registration() {
         <div>
           <a href="/">
             <img
-              className="mx-auto h-12 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              className="mx-auto h-16 w-auto"
+              src="/logo.png"
               alt="Your Company"
             />
           </a>
@@ -26,7 +26,7 @@ function Registration() {
                 <input
                   type="text"
                   name="name"
-                  className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                 />
               </div>
             </div>
@@ -41,7 +41,7 @@ function Registration() {
                 <input
                   type="email"
                   name="email"
-                  className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                 />
               </div>
             </div>
@@ -56,7 +56,7 @@ function Registration() {
                 <input
                   type="password"
                   name="password"
-                  className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                 />
               </div>
             </div>
@@ -71,15 +71,15 @@ function Registration() {
                 <input
                   type="password"
                   name="password_confirmation"
-                  className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                 />
               </div>
             </div>
-            <a href="#" className="text-xs text-indigo-600 hover:underline">
+            <a href="#" className="text-xs text-sky-600 hover:underline">
               Forget Password?
             </a>
             <div className="flex items-center mt-4">
-              <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-indigo-700 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">
+              <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-sky-700 rounded-md hover:bg-sky-600 focus:outline-none focus:bg-sky-600">
                 Register
               </button>
             </div>
@@ -87,7 +87,7 @@ function Registration() {
           <div className="mt-4 text-grey-600">
             Already have an account?{" "}
             <span>
-              <a className="text-indigo-600 hover:underline" href="#">
+              <a className="text-sky-600 hover:underline" href="#">
                 Log in
               </a>
             </span>

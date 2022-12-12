@@ -13,8 +13,8 @@ function Sidebar() {
       <div>
         <div className="mt-3">
           <img
-            className="block h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+            className="block h-10 w-auto"
+            src="/logo.png"
             alt="Your Company"
           />
         </div>
