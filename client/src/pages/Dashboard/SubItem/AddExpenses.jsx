@@ -18,7 +18,7 @@ export default function AddExpenses() {
         <button
           type="button"
           onClick={openModal}
-          className="px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-indigo-700 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600"
+          className="px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-sky-700 rounded-md hover:bg-sky-600 focus:outline-none focus:bg-sky-600"
         >
           Add Expenses
         </button>
@@ -54,39 +54,87 @@ export default function AddExpenses() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Payment successful
+                    Expenses
                   </Dialog.Title>
                   <form className="mt-2 space-y-2">
                     <div>
                       <label
-                        htmlFor="name"
+                        htmlFor="date"
                         className="block flex items-start text-sm font-medium text-gray-700 undefined"
                       >
-                        Name
+                        Date
                       </label>
                       <div className="flex flex-col items-start">
                         <input
                           type="text"
-                          name="name"
-                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                          name="date"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
+                          placeholder="01/01/2022"
+                        />
+                      </div>
+                    </div>
+                    {/* Change to dropdown button */}
+                    <div className="mt-4">
+                      <label
+                        htmlFor="project"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Project
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <input
+                          type="text"
+                          name="project"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                         />
                       </div>
                     </div>
                     <div className="mt-4">
                       <label
-                        htmlFor="email"
+                        htmlFor="Category"
                         className="block flex items-start text-sm font-medium text-gray-700 undefined"
                       >
-                        Email
+                        Category
                       </label>
                       <div className="flex flex-col items-start">
                         <input
-                          type="email"
-                          name="email"
-                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                          type="text"
+                          name="Category"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                         />
                       </div>
+                    </div>
+                    <div className="mt-4">
+                      <label
+                        htmlFor="description"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Decription
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <textarea
+                          type="description"
+                          name="description"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
+                        ></textarea>
+                      </div>
                     </div>{" "}
+                    <div class="flex w-full h-screen items-center justify-center bg-grey-lighter">
+                      <label class="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
+                        <svg
+                          class="w-8 h-8"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                        </svg>
+                        <span class="mt-2 text-base leading-normal">
+                          Upload Receipt
+                        </span>
+                        <input type="file" class="hidden" />
+                      </label>
+                    </div>
                   </form>
 
                   <div className="mt-4">

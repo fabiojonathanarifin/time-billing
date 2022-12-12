@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import SelectProject from "../../../components/Buttons/SelectProject";
 
 export default function AddProject() {
   let [isOpen, setIsOpen] = useState(true);
@@ -57,6 +58,7 @@ export default function AddProject() {
                     Payment successful
                   </Dialog.Title>
                   <form className="mt-2 space-y-2">
+                    <SelectProject />
                     <div>
                       <label
                         htmlFor="name"
