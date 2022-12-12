@@ -54,7 +54,7 @@ export default function AddClient() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Payment successful
+                    Client
                   </Dialog.Title>
                   <form className="mt-2 space-y-2">
                     <div>
@@ -62,7 +62,7 @@ export default function AddClient() {
                         htmlFor="name"
                         className="block flex items-start text-sm font-medium text-gray-700 undefined"
                       >
-                        Name
+                        Client Name
                       </label>
                       <div className="flex flex-col items-start">
                         <input
@@ -72,19 +72,33 @@ export default function AddClient() {
                         />
                       </div>
                     </div>
-                    <div className="mt-4">
+                    <div>
                       <label
-                        htmlFor="email"
+                        htmlFor="website"
                         className="block flex items-start text-sm font-medium text-gray-700 undefined"
                       >
-                        Email
+                        Website
                       </label>
                       <div className="flex flex-col items-start">
                         <input
-                          type="email"
-                          name="email"
+                          type="text"
+                          name="website"
                           className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                         />
+                      </div>
+                    </div>
+                    <div className="mt-4">
+                      <label
+                        htmlFor="Address"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Address
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <textarea
+                          name="Address"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
+                        ></textarea>
                       </div>
                     </div>{" "}
                   </form>
