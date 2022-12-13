@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import Checkbox from "../../../components/Buttons/Checkbox";
 
 export default function AddRole() {
   let [isOpen, setIsOpen] = useState(true);
@@ -18,7 +19,7 @@ export default function AddRole() {
         <button
           type="button"
           onClick={openModal}
-          className="px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-indigo-700 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600"
+          className="px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-sky-700 rounded-md hover:bg-sky-600 focus:outline-none focus:bg-sky-600"
         >
           Add Role
         </button>
@@ -54,39 +55,21 @@ export default function AddRole() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Payment successful
+                    Role
                   </Dialog.Title>
                   <form className="mt-2 space-y-2">
                     <div>
-                      <label
-                        htmlFor="name"
-                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
-                      >
-                        Name
-                      </label>
                       <div className="flex flex-col items-start">
                         <input
                           type="text"
-                          name="name"
-                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                          name="role"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                         />
                       </div>
                     </div>
-                    <div className="mt-4">
-                      <label
-                        htmlFor="email"
-                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
-                      >
-                        Email
-                      </label>
-                      <div className="flex flex-col items-start">
-                        <input
-                          type="email"
-                          name="email"
-                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                        />
-                      </div>
-                    </div>{" "}
+                    <div>
+                      <Checkbox />
+                    </div>
                   </form>
 
                   <div className="mt-4">

@@ -1,7 +1,8 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import SelectProject from "../../../components/Buttons/SelectProject";
 
-export default function AddClient() {
+export default function AddContact() {
   let [isOpen, setIsOpen] = useState(true);
 
   function closeModal() {
@@ -20,7 +21,7 @@ export default function AddClient() {
           onClick={openModal}
           className="px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-sky-700 rounded-md hover:bg-sky-600 focus:outline-none focus:bg-sky-600"
         >
-          Add Client
+          Add Contact
         </button>
       </div>
 
@@ -54,53 +55,87 @@ export default function AddClient() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Client
+                    Contact
                   </Dialog.Title>
                   <form className="mt-2 space-y-2">
                     <div>
+                      <SelectProject />
+                    </div>
+                    <div>
                       <label
-                        htmlFor="name"
+                        htmlFor="firstname"
                         className="block flex items-start text-sm font-medium text-gray-700 undefined"
                       >
-                        Client Name
+                        First Name
                       </label>
                       <div className="flex flex-col items-start">
                         <input
                           type="text"
-                          name="name"
+                          name="firstname"
                           className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                         />
                       </div>
                     </div>
                     <div>
                       <label
-                        htmlFor="website"
+                        htmlFor="lastname"
                         className="block flex items-start text-sm font-medium text-gray-700 undefined"
                       >
-                        Website
+                        Last Name
                       </label>
                       <div className="flex flex-col items-start">
                         <input
                           type="text"
-                          name="website"
+                          name="lastname"
                           className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
                         />
                       </div>
                     </div>
-                    <div className="mt-4">
+                    <div>
                       <label
-                        htmlFor="Address"
+                        htmlFor="email"
                         className="block flex items-start text-sm font-medium text-gray-700 undefined"
                       >
-                        Address
+                        Email
                       </label>
                       <div className="flex flex-col items-start">
-                        <textarea
-                          name="Address"
+                        <input
+                          type="email"
+                          name="email"
                           className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
-                        ></textarea>
+                        />
                       </div>
-                    </div>{" "}
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="role"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Role
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <input
+                          type="text"
+                          name="role"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="number"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Contact Number
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <input
+                          type="text"
+                          name="number"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
+                        />
+                      </div>
+                    </div>
                   </form>
 
                   <div className="mt-4">
