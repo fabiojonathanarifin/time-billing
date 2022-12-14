@@ -23,7 +23,7 @@ const Checkbox = () => {
 
       <LabelPrimitive.Label
         htmlFor="c1"
-        className="ml-3 select-none text-sm font-medium text-sky-900 dark:text-sky-900"
+        className="ml-3 select-none text-sm font-medium text-gray-700 dark:text-gray-100"
       >
         Accept terms and conditions
       </LabelPrimitive.Label>
