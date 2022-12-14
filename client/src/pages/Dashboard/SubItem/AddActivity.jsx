@@ -21,7 +21,7 @@ export default function AddActivity() {
           onClick={openModal}
           className="px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-sky-700 rounded-md hover:bg-sky-600 focus:outline-none focus:bg-sky-600"
         >
-          Add time
+          Add Activity
         </button>
       </div>
 

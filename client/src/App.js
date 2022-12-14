@@ -9,6 +9,8 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import DashProfile from "./pages/DashProfile";
 import DashProject from "./DashProject";
 import DashProgressBar from "./DashProgressBar";
+import AddMember from "./pages/Dashboard/SubItem/AddMember";
+import RadioBtnType from "./components/Buttons/RadioBtnType";
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
       <DashProfile />
       <DashProject />
       <DashProgressBar />
+      <RadioBtnType />
     </div>
   );
 }
