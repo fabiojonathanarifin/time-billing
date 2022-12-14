@@ -2,6 +2,8 @@ import AddActivity from "./SubItem/AddActivity";
 import AddClient from "./SubItem/AddClient";
 import AddContact from "./SubItem/AddContact";
 import AddExpenses from "./SubItem/AddExpenses";
+import AddMember from "./SubItem/AddMember";
+import AddProject from "./SubItem/AddProject";
 import AddRole from "./SubItem/AddRole";
 function Dashboard() {
   return (
@@ -11,6 +13,8 @@ function Dashboard() {
       <AddClient />
       <AddContact />
       <AddRole />
+      <AddMember />
+      <AddProject />
     </div>
   );
 }
