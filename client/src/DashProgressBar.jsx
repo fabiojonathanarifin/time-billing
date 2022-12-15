@@ -1,7 +1,7 @@
 function DashProgressBar() {
   return (
     <div className="flex flex-col items-center bg-gray-100">
-      <div className="min-h-screen py-20 px-10">
+      <div className="min-h-max py-20 px-10">
         <div className="grid grid-cols-1 gap-20 lg:grid-cols-2 lg:gap-10">
           <div
             className="flex items-center flex-wrap max-w-md px-10 bg-white shadow-xl rounded-2xl h-20"
