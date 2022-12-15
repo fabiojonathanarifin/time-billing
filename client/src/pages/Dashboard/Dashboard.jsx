@@ -5,6 +5,7 @@ import AddExpenses from "./SubItem/AddExpenses";
 import AddMember from "./SubItem/AddMember";
 import AddProject from "./SubItem/AddProject";
 import AddRole from "./SubItem/AddRole";
+import ManageTeams from "./SubItem/ManageTeam";
 function Dashboard() {
   return (
     <div className="space-y-6">
@@ -15,6 +16,7 @@ function Dashboard() {
       <AddRole />
       <AddMember />
       <AddProject />
+      <ManageTeams />
     </div>
   );
 }
