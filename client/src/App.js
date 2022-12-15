@@ -6,11 +6,10 @@ import Sidebar from "./layouts/Sidebar";
 import Login from "./pages/Login/Login";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import DashProfile from "./pages/DashProfile";
+import DashProfile from "./pages/UserProfile/DashProfile";
 import DashProject from "./DashProject";
 import DashProgressBar from "./DashProgressBar";
-import AddMember from "./pages/Dashboard/SubItem/AddMember";
-import RadioBtnType from "./components/Buttons/RadioBtnType";
+import TeamProfile from "./pages/TeamProfile/TeamProfile";
 
 function App() {
   return (
@@ -25,7 +24,7 @@ function App() {
       <DashProfile />
       <DashProject />
       <DashProgressBar />
-      <RadioBtnType />
+      <TeamProfile />
     </div>
   );
 }
