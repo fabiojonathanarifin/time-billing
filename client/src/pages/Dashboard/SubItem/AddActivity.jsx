@@ -64,7 +64,7 @@ export default function AddActivity() {
                         htmlFor="project"
                         className="block flex items-start text-sm font-medium text-gray-700 undefined"
                       >
-                        Project
+                        Your Activity
                       </label>
                       <div className="flex flex-col items-start">
                         <input
