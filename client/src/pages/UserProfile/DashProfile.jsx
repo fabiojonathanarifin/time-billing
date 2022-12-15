@@ -27,6 +27,11 @@ function DashProfile() {
           <div className="px-2 py-2 text-gray-500 font-semibold">
             <p>Full-Time</p>
           </div>
+          <div>
+            <p>Display teams here</p>
+            <p>team 1</p>
+            <p>team 2</p>
+          </div>
 
           <div className="text-center px-1 py-1">
             <button className="flex flex-col w-full px-4 py-2 tracking-wide items-center text-white transition-colors duration-200 transform bg-sky-700 rounded-md hover:bg-sky-600 focus:outline-none focus:bg-sky-600">
