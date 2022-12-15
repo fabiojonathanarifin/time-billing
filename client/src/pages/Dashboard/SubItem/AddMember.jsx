@@ -1,6 +1,10 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import AccessLevel from "../../../components/Buttons/AccessLevel";
+import HideCostCheckbox from "../../../components/Buttons/HideCostChecbox";
 import RadioBtnType from "../../../components/Buttons/RadioBtnType";
+import SelectProject from "../../../components/Buttons/SelectProject";
+import ProjectTable from "../../../components/ProjectTable";
 
 export default function AddMember() {
   let [isOpen, setIsOpen] = useState(true);
@@ -110,7 +114,108 @@ export default function AddMember() {
                       <div className="flex flex-col items-start">
                         <RadioBtnType />
                       </div>
-                    </div>{" "}
+                    </div>
+                    <div>
+                      <div className="flex flex-col items-start">
+                        <AccessLevel />
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex flex-col items-start">
+                        <HideCostCheckbox />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="last name"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Weekly Working Capacity
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <input
+                          type="text"
+                          name="last name"
+                          placeholder="40 hour/week"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="last name"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Days
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <HideCostCheckbox />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="last name"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Default Billable Rate
+                      </label>
+                      <p>
+                        Set custom rates for projects that support "individual
+                        rates"
+                      </p>
+                      <div className="flex flex-col items-start">
+                        <input
+                          type="text"
+                          name="last name"
+                          placeholder="30 $/hour"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="last name"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Cost Rate
+                      </label>
+                      <p>Set hourly labor cost for this individual</p>
+                      <div className="flex flex-col items-start">
+                        <input
+                          type="text"
+                          name="last name"
+                          placeholder="30 $/hr"
+                          className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="last name"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Project and Hourly Rates
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <SelectProject id="project-selection" />
+
+                        <SelectProject id="type-filter(Fixed rate, Hourly Billable, Non-Billable)" />
+                      </div>
+                      <div>
+                        <ProjectTable />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="last name"
+                        className="block flex items-start text-sm font-medium text-gray-700 undefined"
+                      >
+                        Teams Assignment
+                      </label>
+                      <div className="flex flex-col items-start">
+                        <SelectProject />
+                      </div>
+                    </div>
                   </form>
 
                   <div className="mt-4">
@@ -119,7 +224,7 @@ export default function AddMember() {
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
-                      Got it, thanks!
+                      Invite Member
                     </button>
                   </div>
                 </Dialog.Panel>
