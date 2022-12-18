@@ -4,7 +4,7 @@ import ProjectTypeTab from "../../../components/Buttons/ProjectTypeTab";
 import SelectProject from "../../../components/Buttons/SelectProject";
 
 export default function AddProject() {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);

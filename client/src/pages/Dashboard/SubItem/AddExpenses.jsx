@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import UploadFile from "../../../components/Buttons/UploadFile";
 
 export default function AddExpenses() {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);

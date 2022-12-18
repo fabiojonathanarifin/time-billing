@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import Checkbox from "../../../components/Buttons/Checkbox";
 
 export default function AddRole() {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);

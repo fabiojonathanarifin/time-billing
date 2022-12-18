@@ -7,7 +7,7 @@ import SelectProject from "../../../components/Buttons/SelectProject";
 import ProjectTable from "../../../components/ProjectTable";
 
 export default function AddMember() {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);

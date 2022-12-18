@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import SelectProject from "../../../components/Buttons/SelectProject";
 
 export default function AddContact() {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
