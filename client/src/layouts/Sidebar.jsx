@@ -5,6 +5,7 @@ import {
   ChartBarIcon,
   Cog6ToothIcon,
   FlagIcon,
+  BriefcaseIcon,
 } from "@heroicons/react/24/solid";
 
 function Sidebar() {
@@ -24,6 +25,9 @@ function Sidebar() {
           </div>
           <div>
             <ChartBarIcon className="icon-color" />
+          </div>
+          <div>
+            <BriefcaseIcon className="icon-color" />
           </div>
           <div>
             <Cog6ToothIcon className="icon-color" />
