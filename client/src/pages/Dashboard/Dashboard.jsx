@@ -1,4 +1,3 @@
-import DateButton from "../../components/Buttons/DateButton";
 import AddActivity from "./SubItem/AddActivity";
 import AddClient from "./SubItem/AddClient";
 import AddContact from "./SubItem/AddContact";
@@ -18,7 +17,6 @@ function Dashboard() {
       <AddMember />
       <AddProject />
       <ManageTeams />
-      <DateButton />
     </div>
   );
 }
