@@ -7,10 +7,24 @@
     padding: 15px;
 }
 
+.subsidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    padding: 15px;
+}
+
 .sidebar .menu {
     padding: 1px
 }
 
 .icon-color {
     color: rgb(68, 76, 86);
+}
+
+.sub-icon {
+    color: white;
+    height: 1.3em;
 }

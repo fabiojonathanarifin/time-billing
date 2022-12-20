@@ -10,21 +10,27 @@ import DashProfile from "./pages/UserProfile/DashProfile";
 import DashProject from "./DashProject";
 import DashProgressBar from "./DashProgressBar";
 import TeamProfile from "./pages/TeamProfile/TeamProfile";
+import SubSidebar from "./layouts/SubSidebar";
+import Users from "./pages/Users/Users";
 
 function App() {
   return (
     <div className="App bg-gray-100">
       {/* <Navbar /> */}
+      {/* <SubSidebar /> */}
       <Sidebar />
-      <Routes>
-        <Route path="/" element={<Login />} />
-      </Routes>
-      <Registration />
-      <Dashboard />
-      <DashProfile />
-      <DashProject />
-      <DashProgressBar />
-      <TeamProfile />
+      <div className="contentmargin bg-gray-100">
+        <Routes>
+          <Route path="/" element={<Login />} />
+        </Routes>
+        <Registration />
+        <Dashboard />
+        <DashProfile />
+        <DashProject />
+        <DashProgressBar />
+        <TeamProfile />
+        <Users />
+      </div>
     </div>
   );
 }
