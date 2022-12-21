@@ -4,7 +4,7 @@
     left: 0;
     width: 65px;
     height: 100%;
-    padding: 15px;
+    align-items: center;
 }
 
 .subsidebar {
@@ -17,14 +17,56 @@
 }
 
 .sidebar .menu {
-    padding: 1px
+    padding: 1px;
 }
 
-.icon-color {
-    color: rgb(68, 76, 86);
-}
 
 .sub-icon {
     color: white;
     height: 1.3em;
+}
+
+.sidebar-button {
+    position: relative;
+    display: inline-block;
+    color: rgb(68, 76, 86);
+    text-align: center;
+    transition: all 1s;
+    width: 2rem;
+}
+
+.sidebar-button-content {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    transition: all 1s ease-in-out;
+    z-index: -1;
+
+}
+
+.sidebar-button:hover {
+    color: whitesmoke;
+    height: auto;
+    cursor: pointer;
+}
+
+.sidebar-button:hover+.sidebar-button-content {
+    transform: translate(105px, 0px)
+}
+
+
+
+.sub {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
 }
