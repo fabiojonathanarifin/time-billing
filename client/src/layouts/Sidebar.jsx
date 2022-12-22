@@ -18,32 +18,44 @@ function Sidebar() {
             alt="Your Company"
           />
         </div>
-        <div className="w-full mt-12 space-y-8 relative bg-gray-800">
-          <div>
+        <div className="w-full pb-5 mt-12 space-y-8 bg-gray-800">
+          <div className="relative">
             <HomeIcon className="sidebar-button" />
             <div className="sidebar-button-content bg-gray-700 rounded-md">
-              <div className="sub font-bold">Dashboard</div>
-              <div className="sub mt-2 space-y-1 pl-3 font-semibold">
+              <div className="sub font-semibold">Dashboard</div>
+              {/* <div className="sub mt-2 space-y-1 pl-3 font-semibold">
                 <p>Activity</p>
                 <p>Timer</p>
                 <p>Toggle</p>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div>
+          <div className="relative">
             <ChartBarIcon className="sidebar-button" />
+            <div className="sidebar-button-content bg-gray-700 rounded-md">
+              <div className="sub font-semibold">Report</div>
+            </div>
           </div>
-          <div>
+          <div className="relative">
             <BriefcaseIcon className="sidebar-button" />
+            <div className="sidebar-button-content bg-gray-700 rounded-md">
+              <div className="sub font-semibold">Manage</div>
+            </div>
           </div>
-          <div>
+          <div className="relative">
             <Cog6ToothIcon className="sidebar-button" />
+            <div className="sidebar-button-content bg-gray-700 rounded-md">
+              <div className="sub font-semibold">Settings</div>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <div>
+        <div className="relative">
           <FlagIcon className="p-1 mb-3 sidebar-button" />
+          <div className="sidebar-button-content bg-gray-700 rounded-md">
+            <div className="sub font-semibold">Feedback</div>
+          </div>
         </div>
         <div>
           <img
