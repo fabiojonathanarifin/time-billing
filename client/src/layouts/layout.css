@@ -45,7 +45,7 @@
     width: 85px;
     height: 32px;
     color: white;
-    transition: all 4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .5s ease-in-out;
     z-index: -1;
 
 }
@@ -57,7 +57,7 @@
 }
 
 .sidebar-button:hover+.sidebar-button-content {
-    transform: translate(1400px, 0px) rotate(8000deg);
+    transform: translate(90px, 0px);
 }
 
 
