@@ -2,16 +2,42 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 65px;
+    width: 70px;
     height: 100%;
     align-items: center;
+}
+
+.wide-bar-items {
+    color: rgb(139, 140, 142);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.wide-bar-items:hover {
+    color: white;
+}
+
+.wide-bar-icon {
+    height: 1.3em;
+}
+
+.wide-bar-bottom {
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid rgb(68, 68, 69);
+    border-bottom: 1px solid rgb(68, 68, 69)
+}
+
+.wide-bar-user-profile {
+    font-size: 11px;
+    color: rgb(139, 140, 142);
 }
 
 .subsidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 220px;
+    width: 160px;
     height: 100%;
     padding: 15px;
 }
@@ -21,10 +47,6 @@
 }
 
 
-.sub-icon {
-    color: white;
-    height: 1.3em;
-}
 
 .sidebar-button {
     position: relative;
