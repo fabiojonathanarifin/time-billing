@@ -17,8 +17,8 @@ function App() {
   return (
     <div className="App bg-gray-100">
       {/* <Navbar /> */}
-      {/* <SubSidebar /> */}
-      <Sidebar />
+      <SubSidebar />
+      {/* <Sidebar /> */}
       <div className="contentmargin bg-gray-100">
         <Routes>
           <Route path="/" element={<Login />} />
