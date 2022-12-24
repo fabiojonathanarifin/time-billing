@@ -15,7 +15,7 @@ import {
 
 function SubSidebar() {
   return (
-    <div className="subsidebar bg-gray-900 flex flex-col">
+    <div className="sub-sidebar bg-gray-900 flex flex-col">
       <div className="pl-1">
         <div className="mt-3 font-bold text-white">
           <img
