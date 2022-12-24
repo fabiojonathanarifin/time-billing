@@ -19,7 +19,7 @@ function App() {
       {/* <Navbar /> */}
       <SubSidebar />
       {/* <Sidebar /> */}
-      <div className="contentmargin bg-gray-100">
+      <div className="container mx-auto border-2 content-margin border-sky-500 bg-gray-100">
         <Routes>
           <Route path="/" element={<Login />} />
         </Routes>
