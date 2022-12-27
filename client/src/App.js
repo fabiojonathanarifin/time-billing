@@ -12,14 +12,16 @@ import DashProgressBar from "./DashProgressBar";
 import TeamProfile from "./pages/TeamProfile/TeamProfile";
 import SubSidebar from "./layouts/SubSidebar";
 import Users from "./pages/Users/Users";
+import Project from "./pages/Project/Project";
 
 function App() {
   return (
-    <div className="App bg-gray-100">
-      {/* <Navbar /> */}
+    <div className="App">
       <SubSidebar />
       {/* <Sidebar /> */}
-      <div className="container mx-auto border-2 content-margin border-sky-500 bg-gray-100">
+
+      <div className="content-margin">
+        <Navbar />
         <Routes>
           <Route path="/" element={<Login />} />
         </Routes>
@@ -30,6 +32,7 @@ function App() {
         <DashProgressBar />
         <TeamProfile />
         <Users />
+        <Project />
       </div>
     </div>
   );

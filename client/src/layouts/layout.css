@@ -39,7 +39,7 @@
     left: 0;
     width: 160px;
     height: 100%;
-    padding: 15px;
+    padding: 22px;
 }
 
 .sidebar .menu {
@@ -82,6 +82,9 @@
     transform: translate(90px, 0px);
 }
 
+.navbar {
+    margin: 27px;
+}
 
 
 .sub {
@@ -91,4 +94,8 @@
     height: 100%;
     align-self: center;
     color: white;
+}
+
+.sub-items {
+    justify-content: space-between;
 }

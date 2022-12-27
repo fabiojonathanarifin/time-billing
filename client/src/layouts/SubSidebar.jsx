@@ -16,16 +16,16 @@ import {
 function SubSidebar() {
   return (
     <div className="sub-sidebar bg-gray-900 flex flex-col">
-      <div className="pl-1">
-        <div className="mt-3 font-bold text-white">
+      <div>
+        <div className="font-bold text-white">
           <img
             className="block h-10 w-auto"
             src="/logo.png"
             alt="Your Company"
           />
         </div>
-        <div className="flex flex-col h-full justify-between">
-          <div className="mt-8 space-y-6 text-left font-normal text-white">
+        <div className="mt-5 flex flex-col h-full justify-between">
+          <div className="space-y-6 text-left font-normal text-white">
             <div className="wide-bar-items space-x-2 flex items-center">
               <HomeIcon className="wide-bar-icon" />
               <div>Dashboard</div>
@@ -63,7 +63,7 @@ function SubSidebar() {
               <div>Settings</div>
             </div>
           </div>
-          <div>
+          <div className="space-y-4">
             <div className="py-3 space-x-2 wide-bar-bottom">
               <img
                 className="h-8 w-8 rounded-full"
@@ -75,11 +75,9 @@ function SubSidebar() {
                 <div className="flex">Manager</div>
               </div>
             </div>
-            <div className="py-3 ">
-              <div className="wide-bar-items space-x-2 flex items-center">
-                <FlagIcon className="wide-bar-icon" />
-                <div>Feedback</div>
-              </div>
+            <div className="flex wide-bar-items space-x-2 items-center">
+              <FlagIcon className="wide-bar-icon" />
+              <div>Feedback</div>
             </div>
           </div>
         </div>
