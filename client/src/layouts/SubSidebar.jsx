@@ -24,7 +24,7 @@ function SubSidebar() {
             alt="Your Company"
           />
         </div>
-        <div className="mt-5 flex flex-col h-full justify-between">
+        <div className="mt-7 flex flex-col h-full justify-between">
           <div className="space-y-6 text-left font-normal text-white">
             <div className="wide-bar-items space-x-2 flex items-center">
               <HomeIcon className="wide-bar-icon" />
