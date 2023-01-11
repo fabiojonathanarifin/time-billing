@@ -13,6 +13,8 @@ import TeamProfile from "./pages/TeamProfile/TeamProfile";
 import SubSidebar from "./layouts/SubSidebar";
 import Users from "./pages/Users/Users";
 import Project from "./pages/Project/Project";
+import Pricing from "./pages/Pricing/Pricing";
+import Invoice from "./pages/Invoice/Invoice";
 
 function App() {
   return (
@@ -23,16 +25,17 @@ function App() {
       <div className="content-margin">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Registration />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashProfile" element={<DashProfile />} />
+          <Route path="/dashproject" element={<DashProject />} />
+          <Route path="/teamprofile" element={<TeamProfile />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/Project" element={<Project />} />
+          <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/invoice" element={<Invoice />} />
         </Routes>
-        <Registration />
-        <Dashboard />
-        <DashProfile />
-        <DashProject />
-        <DashProgressBar />
-        <TeamProfile />
-        <Users />
-        <Project />
       </div>
     </div>
   );

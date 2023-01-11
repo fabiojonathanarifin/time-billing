@@ -1,0 +1,6 @@
+.invoice-bar {
+    display: grid;
+    grid-gap: 20px;
+    background-color: white;
+    padding: 10px;
+}

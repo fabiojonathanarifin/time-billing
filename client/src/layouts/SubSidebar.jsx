@@ -1,5 +1,6 @@
 import "./layout.css";
 import { Menu } from "@headlessui/react";
+import { Link } from "react-router-dom";
 import {
   HomeIcon,
   ChartBarIcon,
@@ -26,41 +27,77 @@ function SubSidebar() {
         </div>
         <div className="mt-7 flex flex-col h-full justify-between">
           <div className="space-y-6 text-left font-normal text-white">
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <HomeIcon className="wide-bar-icon" />
-              <div>Dashboard</div>
+            <div>
+              <Link to="/dashboard">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <HomeIcon className="wide-bar-icon" />
+                  <div>Dashboard</div>
+                </div>
+              </Link>
             </div>
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <ClockIcon className="wide-bar-icon" />
-              <div>Activity</div>
+            <div>
+              <Link to="/activity">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <ClockIcon className="wide-bar-icon" />
+                  <div>Activity</div>
+                </div>
+              </Link>
             </div>
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <ChartBarIcon className="wide-bar-icon" />
-              <div>Report</div>
+            <div>
+              <Link to="/report">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <ChartBarIcon className="wide-bar-icon" />
+                  <div>Report</div>
+                </div>
+              </Link>
             </div>
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <BriefcaseIcon className="wide-bar-icon" />
-              <div>Manage</div>
+            <div>
+              <Link to="/manage">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <BriefcaseIcon className="wide-bar-icon" />
+                  <div>Manage</div>
+                </div>
+              </Link>
             </div>
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <ClipboardDocumentListIcon className="wide-bar-icon" />{" "}
-              <div>Tasks</div>
+            <div>
+              <Link to="/tasks">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <ClipboardDocumentListIcon className="wide-bar-icon" />{" "}
+                  <div>Tasks</div>
+                </div>
+              </Link>
             </div>
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <FolderIcon className="wide-bar-icon" />
-              <div>Projects</div>
+            <div>
+              <Link to="/projects">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <FolderIcon className="wide-bar-icon" />
+                  <div>Projects</div>
+                </div>
+              </Link>
             </div>
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <UsersIcon className="wide-bar-icon" />
-              <div>Users</div>
+            <div>
+              <Link to="/users">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <UsersIcon className="wide-bar-icon" />
+                  <div>Users</div>
+                </div>
+              </Link>
             </div>
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <TagIcon className="wide-bar-icon" />
-              <div>Tags</div>
+            <div>
+              <Link to="/tags">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <TagIcon className="wide-bar-icon" />
+                  <div>Tags</div>
+                </div>
+              </Link>
             </div>
-            <div className="wide-bar-items space-x-2 flex items-center">
-              <Cog6ToothIcon className="wide-bar-icon" />
-              <div>Settings</div>
+            <div>
+              <Link to="/settings">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <Cog6ToothIcon className="wide-bar-icon" />
+                  <div>Settings</div>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="space-y-4">

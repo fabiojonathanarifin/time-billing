@@ -6,6 +6,7 @@ import {
   FlagIcon,
   BriefcaseIcon,
 } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -20,15 +21,12 @@ function Sidebar() {
         </div>
         <div className="w-full pb-5 mt-12 space-y-8 bg-gray-800">
           <div className="relative">
-            <HomeIcon className="sidebar-button" />
-            <div className="sidebar-button-content bg-gray-700 rounded-md">
-              <div className="sub font-semibold">Dashboard</div>
-              {/* <div className="sub mt-2 space-y-1 pl-3 font-semibold">
-                <p>Activity</p>
-                <p>Timer</p>
-                <p>Toggle</p>
-              </div> */}
-            </div>
+            <Link to="/dashboard">
+              <HomeIcon className="sidebar-button" />
+              <div className="sidebar-button-content bg-gray-700 rounded-md">
+                <div className="sub font-semibold">Dashboard</div>
+              </div>
+            </Link>
           </div>
           <div className="relative">
             <ChartBarIcon className="sidebar-button" />
