@@ -8,7 +8,11 @@
   min-height: 100vh;
 }
 
-.content-margin {
-
+.navbar-margin {
   margin-left: 160px;
+}
+
+.content-margin {
+  margin-left: 80px;
+  margin-right: 80px;
 }

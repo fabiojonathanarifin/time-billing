@@ -4,8 +4,12 @@ import "./Invoice.css";
 function Invoice() {
   return (
     <div>
-      Invoice
-      <div className="invoice-bar">test</div>
+      <div>Invoice</div>
+      <div className="invoice-bar card">
+        <div>tes</div>
+        <div>nice</div>
+        test
+      </div>
     </div>
   );
 }

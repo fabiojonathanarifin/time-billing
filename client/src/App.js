@@ -21,21 +21,22 @@ function App() {
     <div className="App">
       <SubSidebar />
       {/* <Sidebar /> */}
-
-      <div className="content-margin">
+      <div className="navbar-margin">
         <Navbar />
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Registration />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/dashProfile" element={<DashProfile />} />
-          <Route path="/dashproject" element={<DashProject />} />
-          <Route path="/teamprofile" element={<TeamProfile />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/Project" element={<Project />} />
-          <Route path="/Pricing" element={<Pricing />} />
-          <Route path="/invoice" element={<Invoice />} />
-        </Routes>
+        <div className="content-margin">
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Registration />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashProfile" element={<DashProfile />} />
+            <Route path="/dashproject" element={<DashProject />} />
+            <Route path="/teamprofile" element={<TeamProfile />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/Project" element={<Project />} />
+            <Route path="/Pricing" element={<Pricing />} />
+            <Route path="/invoice" element={<Invoice />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );

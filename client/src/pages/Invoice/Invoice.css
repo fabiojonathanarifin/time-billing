@@ -1,6 +1,25 @@
 .invoice-bar {
     display: grid;
-    grid-gap: 20px;
-    background-color: white;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+
+.card {
+    /* flex container can't work with grid-template-columns */
+    /* display: flex; */
+    justify-content: center;
     padding: 10px;
+    align-items: center;
+    background-color: white;
+    font-size: 12px;
+    color: grey;
+    height: 100%;
+    width: 100%;
+    border-radius: .75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
