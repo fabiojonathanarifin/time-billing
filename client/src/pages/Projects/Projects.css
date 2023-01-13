@@ -1,7 +1,7 @@
 .invoice-bar {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     justify-items: start;
 }
 
