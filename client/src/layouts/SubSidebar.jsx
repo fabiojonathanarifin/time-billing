@@ -76,10 +76,10 @@ function SubSidebar() {
               </Link>
             </div>
             <div>
-              <Link to="/users">
+              <Link to="/teams">
                 <div className="wide-bar-items space-x-2 flex items-center">
                   <UsersIcon className="wide-bar-icon" />
-                  <div>Users</div>
+                  <div>Teams</div>
                 </div>
               </Link>
             </div>
