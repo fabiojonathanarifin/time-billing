@@ -4,13 +4,20 @@ function Project() {
   return (
     <div className="project-bar card font-medium text-sm">
       <div className="client">
-        <div className="font-bold text-base">Skitraw Tech</div>
+        <div className="font-boldcd text-base">Skitraw Tech</div>
         <div>TimeBilling</div>
       </div>
       <div className="project-content">
         <div>40 hours 20 minutes</div>
         <div>80 hours</div>
-        <div>Progress bar - 53%</div>
+        <div className="spent-bar-grid ">
+          <div className="w-full h-3 bg-gray-200 rounded-full dark:bg-gray-700">
+            <div className="spent-bar bg-sky-600 text-xs font-medium text-blue-100 text-end p-0.5 leading-none rounded-full">
+              {/* 72% */}
+            </div>
+          </div>
+          53%
+        </div>
         <div>39 hours 40 minutes</div>
         <div>$400</div>
         <div>

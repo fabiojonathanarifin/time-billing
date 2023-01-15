@@ -13,7 +13,7 @@ function Projects() {
           <div>Hours Spent</div>
           <div>Budget</div>
           <div>Spent</div>
-          <div>Budget Remaining</div>
+          <div>Budget left</div>
           <div>Expenses</div>
         </div>
       </div>

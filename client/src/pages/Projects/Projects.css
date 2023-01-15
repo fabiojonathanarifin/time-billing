@@ -10,7 +10,7 @@
     flex-wrap: nowrap; */
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 112px 60px 112px 112px 20px 20px
+    grid-template-columns: 112px 60px 112px 112px 60px 20px
 }
 
 .client {
@@ -38,4 +38,22 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.spent-bar-grid {
+    display: grid;
+    align-items: center;
+    gap: 5px;
+    grid-template-columns: 1fr auto;
+}
+
+
+.spent-bar {
+    width: 53%;
+    height: .75rem;
+    align-items: center;
+    color: rgba(255, 255, 255, 0%);
+    transition: width 2s, color 2s, --num 2s;
+    counter-set: num var(--num);
+    transition-timing-function: cubic-bezier(.17, .67, .83, .67);
 }
