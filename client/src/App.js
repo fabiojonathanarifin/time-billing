@@ -15,6 +15,7 @@ import Users from "./pages/Users/Users";
 import Projects from "./pages/Projects/Projects";
 import Pricing from "./pages/Pricing/Pricing";
 import Invoice from "./pages/Invoice/Invoice";
+import TeamsDashboard from "./pages/Teams/TeamsDashboard";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path="/dashproject" element={<DashProject />} />
 
             <Route path="/teamprofile" element={<TeamProfile />} />
+            <Route path="/teams" element={<TeamsDashboard />} />
             <Route path="/users" element={<Users />} />
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Pricing" element={<Pricing />} />
