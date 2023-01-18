@@ -1,10 +1,13 @@
 .teams-card-head {
     display: flex;
+
 }
 
 .teams-card {
     /* flex container can't work with grid-template-columns */
     display: grid;
+    justify-self: stretch;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 8px;
     justify-content: center;
