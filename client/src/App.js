@@ -16,6 +16,7 @@ import Projects from "./pages/Projects/Projects";
 import Pricing from "./pages/Pricing/Pricing";
 import Invoice from "./pages/Invoice/Invoice";
 import TeamsDashboard from "./pages/Teams/TeamsDashboard";
+import Manage from "./pages/Manage/Manage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/dashProfile" element={<DashProfile />} />
             <Route path="/dashproject" element={<DashProject />} />
+            <Route path="/manage" element={<Manage />} />
 
             <Route path="/teamprofile" element={<TeamProfile />} />
             <Route path="/teams" element={<TeamsDashboard />} />
