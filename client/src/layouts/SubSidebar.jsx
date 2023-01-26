@@ -11,6 +11,7 @@ import {
   UsersIcon,
   FlagIcon,
   TagIcon,
+  CurrencyDollarIcon,
   BriefcaseIcon,
 } from "@heroicons/react/24/solid";
 
@@ -88,6 +89,14 @@ function SubSidebar() {
                 <div className="wide-bar-items space-x-2 flex items-center">
                   <TagIcon className="wide-bar-icon" />
                   <div>Tags</div>
+                </div>
+              </Link>
+            </div>
+            <div>
+              <Link to="/invoice">
+                <div className="wide-bar-items space-x-2 flex items-center">
+                  <CurrencyDollarIcon className="wide-bar-icon" />
+                  <div>Invoice</div>
                 </div>
               </Link>
             </div>
