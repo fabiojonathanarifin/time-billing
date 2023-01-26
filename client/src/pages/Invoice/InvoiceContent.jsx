@@ -3,7 +3,7 @@ import { DocumentIcon } from "@heroicons/react/24/solid";
 
 function InvoiceContent() {
   return (
-    <div className="invoice-bar card font-medium text-sm">
+    <div className="invoice-bar invoice-card font-medium text-sm">
       <div className="client">
         <div className="font-semibold text-base">Skitraw Tech</div>
         <div>TimeBilling</div>

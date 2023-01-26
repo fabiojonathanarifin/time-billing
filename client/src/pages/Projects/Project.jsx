@@ -2,7 +2,7 @@ import "./Projects.css";
 import { PencilSquareIcon } from "@heroicons/react/24/outline";
 function Project() {
   return (
-    <div className="project-bar card font-medium text-sm">
+    <div className="project-bar project-card font-medium text-sm">
       <div className="client">
         <div className="font-semibold text-lg">Skitraw Tech</div>
         <div className="font-normal">TimeBilling</div>

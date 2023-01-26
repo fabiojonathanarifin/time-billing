@@ -13,7 +13,7 @@
 }
 
 
-.card {
+.invoice-card {
     /* flex container can't work with grid-template-columns */
     /* display: flex; */
     justify-content: center;
